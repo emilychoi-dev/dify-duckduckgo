@@ -1,0 +1,17 @@
+[project]
+name = "duckduckgo"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+
+# Refresh the lockfile with: uv lock
+dependencies = [
+    "dify_plugin>=0.10.2",
+    "ddgs>=9.16.0",
+    "curl_cffi>=0.16.3",
+]
+
+# uv run black . -C -l 100 && uv run ruff check --fix
+[dependency-groups]
+dev = []
